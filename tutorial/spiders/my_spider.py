@@ -5,8 +5,8 @@ from scrapy.linkextractor import LinkExtractor
 
 class MySpider(CrawlSpider):
     name = "mySpider"
-    allowed_domains = ['uk.pearson.com']
-    start_urls = ['https://uk.pearson.com']
+    allowed_domains = ['xx.xxxx.com']
+    start_urls = ['https://xx.xxx.com']
 
     rules = (
         Rule(LinkExtractor(allow='\.html$', allow_domains=allowed_domains), callback='parse_item', follow=True),
